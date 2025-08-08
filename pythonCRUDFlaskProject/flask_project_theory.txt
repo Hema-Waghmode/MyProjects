@@ -1,0 +1,208 @@
+Web Application
+===============
+Web application is a website that is applied to 
+solve certain purpose.
+
+For. e.g: flipkart,amazon these solve purpose of
+          online shopping.
+
+
+Web Architecture
+================
+
+            ----Request----->
+      client                 Server
+	  
+	        <---Response----
+			
+		Browser is a client
+		
+		
+		   https://www.itvedant.com/
+		   https://www.itvedant.com/contact
+		   https://www.itvedant.com/placements
+	          ----Request----> 
+	  Browser                  Server
+	         <---Response-----
+
+                   Home page
+				   contact page
+				   Placements
+				   
+	 technologies for web application
+	 
+      
+            ----Request----->
+      client                 Server |DBMS(mysql)
+	  
+	        <---Response----
+
+     Frontend                Backend       sql
+	 HTML                    python,php
+	 CSS                     java,c# etc
+	 JS
+
+
+
+Need of Framework
+=================
+1) Framework provides you ready made code for
+   generic functionality which can be edited, this
+   save lot of time in application developement.
+   e.g: login and registration functionality.
+
+2) Security
+   Framework provides ready made security
+
+3) scalability
+
+
+Types of Framework
+1) Front end Frameworks
+2) Backend Frameworks 
+
+Front end
+css-> Bootstrap
+js -> Jquery,Angular.
+
+backend
+python: flask and Django
+PHP   : codeognitor,Laravel,cakePHP etc
+Java  : Spring Hibernet.
+
+
+Virtual Enviroment
+==================
+Every project must have virtual enviroment created,
+so that all dependencies or modules required for
+that project must be installed in that virtual enviroment
+so that dependencies installed for one project may
+not hamper the working of another project.
+
+Module:virtualenv
+
+pip install virtualenv.
+
+
+Before creating enviroment, you must direct cmd prompt
+to flask project folder (project directory)
+Command to create Virtual env
+
+1) virtualenv enviroment name
+
+2) python -m virtualenv enviroment name
+
+   virtualenv env 
+   or
+   python -m virtualenv env
+   
+   
+   C:\python912wk\flask project
+   
+3) To activate virtual environment env
+   
+   env\Scripts\activate 
+   
+4) To deactivate virtual environment env
+   
+   env\Scripts\deactivate 
+   
+5) After activating virtual env install flask.
+ 
+    pip install flask
+	
+
+Tools to develope web application
+================================
+1) Browser
+2) Server- flask provide server
+3) DBMS-mysql(xampp)
+4) Code editor
+   python-IDLE
+   HTML  - notepad++
+   
+   
+Create object of Flask class.
+In flask module there is Flask class whose object
+need to be created to execute certain methods.
+
+datetime-> module
+datetime-> class
+
+
+run(): This method is used to run server provided 
+       by flask.
+	  This method belong to Flask class, thus there
+	  is a need to create object of Flask Class.
+	
+   
+ctrl+c => to stop server on cmd-prompt
+
+  https://www.itvedant.com/
+  
+  http://127.0.0.1:5000
+  
+  www.domainname.com => ip address:port no
+  
+
+Request - Response Cycle.
+
+step1: Client give request http://127.0.0.1:5000/contact
+step2: Request is given to flask server.
+step3: flask server tries to match 
+       url part(apart from base url:http://127.0.0.1:5000)
+	   with the url in route() method
+  	   defined in main.py files.
+step4: Every route() method is associated with a
+       user defined function.
+	   So once route parameter or url get matched 
+	   with the url received from client request, it 
+	   call or invoke that function.
+step 5: That function provide response to the client.
+
+
+Todo list application
+=====================
+
+Dashboard creation
+==================
+
+Heading of Dashboard (h1 tag in HTML)
+
+Create Task => link (anchor tag in HTML)
+
+Table to list all his task
+==========================
+
+          Title    Details    Date       Edit   Delete
+		  Car    Wash Car    26-06-2022  edit   delete
+
+
+
+
+When user click on create task ,an empty form 
+must be shown
+
+          C1     C2
+		  
+        Title :_____________   r1
+		
+		Detail:_____________   r2
+		
+		Date  :_____________   r3
+		
+		submit                 r4
+
+
+
+
+
+form                         main.py (/store)            Database            
+														 task
+Title :_____________          ti=                                    id  title  detail  date
+												DB
+Detail:_____________ ======>  d =             ======>
+		
+Date  :_____________          dt=
+		
+submit 

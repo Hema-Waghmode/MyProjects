@@ -1,0 +1,27 @@
+
+For installing virtual environment
+1] pip install virtualenv
+
+2] Steps for creating virtual environment for our project
+
+1. go upto project directory in command prompt
+2. give cmd: virtualenv env or 
+       use : python -m virtualenv env
+3. to activate virtual environment env
+    env/Scripts/activate [dont need to iuse cd here]
+     then it will look like this:
+	(env) F:\PythonPgming\Flask_Project>
+
+
+    to deactivate virtual environment env
+    env/Scripts/deactivate [dont need to iuse cd here]
+
+3] After thats install flask in project directory
+
+   pip install flask
+
+4]if pymysql not installed
+  pip3 install pymysql
+
+5] to run project
+(MyEnv) (base) C:\Users\HP\Flask_Project_byMe>python main.py
