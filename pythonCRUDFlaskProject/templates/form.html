@@ -1,0 +1,56 @@
+<html>
+		<head>
+			<title>
+				TOdo | Create Task
+			</title>
+		</head>
+		<body>
+			<h1>Create Task</h1>
+			<form method="POST" action="/store">
+				<table>
+					<tr>
+						<td>Title:</td>
+						<td><input type="text" name="t"/></td>
+					</tr>
+					<tr>
+						<td>Details:</td>
+						<td><textarea  name="det"></textarea></td>
+					</tr>
+					<tr>
+						<td>Date:</td>
+						<td><input type="date" name="dt"/></td>
+					</tr>
+					<tr>
+						
+						<td><input type="submit" name="send"/></td>
+					</tr>
+				</table>
+			</form>
+		</body>
+</html>
+
+ <!----
+				    t=insert
+					det=insert record into database
+					dt=2022-06-25
+					send=submit
+				 
+				    http://127.0.0.1:5000/create?t=insert&det=insert+record+into+database&dt=2022-06-25&send=Submit
+				    http://127.0.0.1:5000/create?t=washing&det=washing+car+tomorrow&dt=2022-06-25&send=Submit
+				   
+				    GET Method:
+					If form is submitted with GET method
+					then Data submitted by form 
+					can be seen in the url in the form of
+					key and value.
+				 
+				    POST method:
+					If form is submitted with POST method
+					then Data submitted by form 
+					cannot be seen in the url in the form of
+					key and value, it send in secured form
+					(encrypted format).
+					
+				 
+				 ----->
+					

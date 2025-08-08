@@ -1,0 +1,43 @@
+<html>
+		<head>
+			<title>
+				TOdo | Dashboard
+			</title>
+		</head>
+		<body>
+			<h1>Dashboard</h1>
+			<a href="/create">Create Task</a>
+			<table border="1" align="center">
+				<tr>
+					<th>Title</th>
+					<th>Details</th>
+					<th>Date</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+				
+				{% for x in d %}
+				
+					<tr>
+						<td>{{x.1}}</td>
+						<td>{{x.2}}</td>	
+						<td>{{x.3}}</td>
+						<td><a href="edit/{{x.0}}">Edit</a></td>
+						<td><a href="delete/{{x.0}}">Delete</a></td>
+					</tr>
+				
+				{% endfor %}
+			</table>
+		</body>
+</html>
+
+<!---
+				     0    1       2                      3           4
+                    id  title     detail               date        is_deleted
+			x->		1   Washing   Washing Car          2022-06-20  N
+			x->		2   inserting Inserting 3rd record 2022-06-19  N
+					3
+					4
+					5
+					
+					-->
